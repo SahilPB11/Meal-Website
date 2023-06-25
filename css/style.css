@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgb(91 59 202),
+    rgb(153 15 117 / 78%)
+  );
+  color: white;
+  overflow-y: scroll;
+}
+
+/* // nav bar color */
+#nav-color {
+  background: linear-gradient(to right, #5f0a87, #a4508b);
+}
+
+/* navba heading and logo */
+.app-name {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  color: beige;
+}
+
+/*  navbar heading text */
+.nav-text {
+  color: #fff;
+}
+
+.navbar-toggler:hover {
+  box-shadow: 0.1px 0.1px 2px #fff;
+}
+.navbar-toggler {
+  box-shadow: 0.1px 0.1px 5px #1e1818;
+}
+
+/*  favourite section navbar color */
+.offcanvas-header {
+  background-image: linear-gradient(
+    to left,
+    rgb(91 59 202),
+    rgb(153 15 117 / 78%)
+  );
+}
+
+/* heading */
+.main-heading {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* search bar  */
+.search-bar {
+  width: 60%;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  outline: none;
+}
+
+/* search bar  shoadow on all side*/
+.search-bar:focus {
+  box-shadow: 2px 2px 8px #be50c6;
+}
+
+#offcanvasNavbar {
+  overflow: hidden;
+}
+/* meal card */
+#card {
+  background-image: linear-gradient(119deg, rgb(91 59 202),
+  rgb(153 15 117 / 78%));
+  /* padding: 10px; */
+  color: white;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 10px;
+}
+
+.card2-body {
+    opacity: 0;
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#card:hover img{
+    opacity: 0.1;
+}
+#card:hover{
+    box-shadow: 0.8px 0.8px 3px #d572dc;
+    
+}
+#card:hover .card2-body{
+    opacity: 0.8;
+}
+
+
+
+#card h5 {
+  color: rgb(237, 235, 235);
+  font-family: cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#card img {
+  border-radius: 20px;
+  position: relative;
+}
+
+#card-title {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* meal details container */
+#meal-details {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ff3044;
+}
+
+#meal-header {
+  width: 70%;
+  margin: auto;
+}
+
+#meal-thumbail img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+#meal-instruction {
+  margin: auto;
+  text-align: center;
+}
+
+#fav {
+  margin: 0 20px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+
